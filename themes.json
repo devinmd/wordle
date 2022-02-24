@@ -1,0 +1,56 @@
+{
+  "default": {
+    "bg": "#1F212CFF",
+    "g": "#309978FF",
+    "y": "#EABF75FF",
+    "d": "#262833",
+    "lbg": "#2E303DFF",
+    "ltxt": "#eeeeee",
+    "dtxt": "#bbbbbb"
+  },
+  "midnight": {
+    "bg": "#111111FF",
+    "g": "#187a32ff",
+    "y": "#bf941fff",
+    "d": "#1b1b1bff",
+    "lbg": "#222222ff",
+    "ltxt": "#bbbbbbff",
+    "dtxt": "#888888"
+  },
+  "light": {
+    "bg": "#FFFFFF",
+    "g": "#309978",
+    "y": "#EABF75",
+    "d": "#c0c0c0",
+    "lbg": "#dddddd",
+    "ltxt": "#111111",
+    "dtxt": "#555555"
+  },
+  "deep sea": {
+    "bg": "#0d152bFF",
+    "g": "#00ab5eFF",
+    "y": "#c2bd23FF",
+    "d": "#161d30FF",
+    "lbg": "#1c233bFF",
+    "ltxt": "#eeeeee",
+    "dtxt": "#bbbbbb"
+  },
+  "sunshine": {
+    "bg": "#fff5c2FF",
+    "g": "#69c439FF",
+    "y": "#ffc336FF",
+    "d": "#ffdc69FF",
+    "lbg": "#ffe799FF",
+    "ltxt": "#1F212CFF",
+    "dtxt": "#45495cFF"
+  },
+  "matcha": {
+    "bg": "#293723",
+    "g": "#527034",
+    "y": "#8E8B30",
+    "d": "#2E3C27",
+    "lbg": "#33422B",
+    "ltxt": "#bbbbbb",
+    "dtxt": "#999999"
+  }
+}

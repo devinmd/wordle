@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>Wordle by avvocado</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+  </head>
+  <body>
+    <div id="settings">
+      <button id="close" onclick="settings()">✖</button>
+      <h3 class="ltxt">Themes</h3>
+      <ol id="themes"></ol>
+      <h3 class="ltxt">Statistics</h3>
+      <br />
+
+      <div class="left">
+        <p id="wins"></p>
+        <p id="bestScore"></p>
+        <p id="avgScore"></p>
+        <p id="timeSpent"></p>
+      </div>
+      <br />
+
+      <h3 onclick="ldg()" style="cursor: pointer" class="ltxt">
+        Letter Distribution
+      </h3>
+      <p class="dtxt">(for greens)</p>
+      <div class="left" id="ldg">
+        <p id="guessDist"></p>
+      </div>
+      <br />
+      <h3 onclick="ldy()" style="cursor: pointer" class="ltxt">
+        Letter Distribution
+      </h3>
+      <p class="dtxt">(for yellows)</p>
+      <div class="left" id="ldy">
+        <ol id="ldAll"></ol>
+      </div>
+
+      <button id="clear" onclick="localStorage.clear(); updateScores();">
+        Clear Scores
+      </button>
+    </div>
+    <div id="main">
+      <h3 id="title">Wordle by avvocado</h3>
+      <button id="settingsBtn" onclick="settings()">≡</button>
+      <p id="copy" onclick="copy()"></p>
+
+      <ol id="mainList"></ol>
+      <p class="dtxt" id="solution"></p>
+      <button id="next" onclick="start()">Next</button>
+      <!-- on screen keyboard -->
+      <ol id="keyboard">
+        <li><button class="key" id="q" onclick="key('KeyQ')">Q</button></li>
+        <li><button class="key" id="w" onclick="key('KeyW')">W</button></li>
+        <li><button class="key" id="e" onclick="key('KeyE')">E</button></li>
+        <li><button class="key" id="r" onclick="key('KeyR')">R</button></li>
+        <li><button class="key" id="t" onclick="key('KeyT')">T</button></li>
+        <li><button class="key" id="y" onclick="key('KeyY')">Y</button></li>
+        <li><button class="key" id="u" onclick="key('KeyU')">U</button></li>
+        <li><button class="key" id="i" onclick="key('KeyI')">I</button></li>
+        <li><button class="key" id="o" onclick="key('KeyO')">O</button></li>
+        <li><button class="key" id="p" onclick="key('KeyP')">P</button></li>
+        <br />
+        <li><button class="key" id="a" onclick="key('KeyA')">A</button></li>
+        <li><button class="key" id="s" onclick="key('KeyS')">S</button></li>
+        <li><button class="key" id="d" onclick="key('KeyD')">D</button></li>
+        <li><button class="key" id="f" onclick="key('KeyF')">F</button></li>
+        <li><button class="key" id="g" onclick="key('KeyG')">G</button></li>
+        <li><button class="key" id="h" onclick="key('KeyH')">H</button></li>
+        <li><button class="key" id="j" onclick="key('KeyJ')">J</button></li>
+        <li><button class="key" id="k" onclick="key('KeyK')">K</button></li>
+        <li><button class="key" id="l" onclick="key('KeyL')">L</button></li>
+        <li>
+          <button class="key" id="del" onclick="key('Backspace')">
+            DELETE
+          </button>
+        </li>
+        <br />
+        <li><button class="key" id="z" onclick="key('KeyZ')">Z</button></li>
+        <li><button class="key" id="x" onclick="key('KeyX')">X</button></li>
+        <li><button class="key" id="c" onclick="key('KeyC')">C</button></li>
+        <li><button class="key" id="v" onclick="key('KeyV')">V</button></li>
+        <li><button class="key" id="b" onclick="key('KeyB')">B</button></li>
+        <li><button class="key" id="n" onclick="key('KeyN')">N</button></li>
+        <li><button class="key" id="m" onclick="key('KeyM')">M</button></li>
+        <li>
+          <button class="key" id="entr" onclick="key('Enter')">ENTER</button>
+        </li>
+      </ol>
+      <button id="giveup" onclick="endGame();">Give up</button>
+
+      <p class="dtxt">
+        source code:
+        <a id="link" href="https://github.com/avvocado/wordle" target="_blank"
+          >https://github.com/avvocado/wordle</a
+        >
+      </p>
+    </div>
+
+    <script src="solutions.js"></script>
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

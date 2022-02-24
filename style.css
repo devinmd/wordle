@@ -1,0 +1,170 @@
+ol{
+	list-style: none;
+	margin: 0;
+}
+
+body{
+	text-align: center;
+	transition: 400ms;
+}
+#settings p {
+	margin-bottom: 0;
+	margin-top: 4px;
+}
+#next{
+	margin: 8px;
+	border: none;
+	outline: none;
+	text-align: center;
+	padding: 8px 24px;
+	border-radius: 6px;
+}
+#giveup{
+	margin: 8px;
+	border: none;
+	outline: none;
+	text-align: center;
+	padding: 8px 24px;
+	border-radius: 6px;
+}
+
+
+#clear{
+	margin: 24px;
+	border: none;
+	outline: none;
+	text-align: center;
+	padding: 8px 24px;
+	border-radius: 6px;
+}
+#keyboard #entr {
+	width: 102px;
+}
+
+#keyboard #del {
+	width: 78px;
+}
+#keyboard button{
+	transition: 500ms;
+	display: inline;
+	margin: 0;
+	margin-top: 4px;
+	width: 48px;
+	height: 32px;
+	border: none;
+	outline: none;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+p{
+	margin: 8px;
+}
+
+#keyboard li{
+	display: inline;
+	margin: 0;
+	margin-left: -4px;
+}
+h3{
+	margin: 0;
+	margin-left: 8px;
+	margin-right: 8px;
+	display: inline-block;
+	margin-top: 16px;
+}
+
+#settings{
+	transition: width 300ms, opacity 0ms, background-color 350ms;
+	left: 0;
+	position: fixed;
+	width: 0;
+	text-align: center;
+	height: 100%;
+	top: 0;
+	opacity: 0;
+	overflow-y: auto;
+	margin: 0;
+}
+
+#ldAll{
+	display: inline-block;
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+	margin-top: 16px;
+}
+#ldg, #ldy {
+	display: none;
+}
+
+#settings li button {
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	width: 96px;
+	height: 30px;
+	margin: 8px;
+}
+#close{
+	border: none;
+	outline: none;
+	background-color: transparent;
+	text-align: right;
+	float: right;
+	font-size: 24px;
+	margin-right: 8px;
+}
+#settings li {
+	display: inline-block;
+}
+
+#main {
+	transition: 300ms;
+}
+
+#copy{
+	cursor: pointer;
+}
+#settingsBtn{
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background-color: transparent;
+	font-size: 32px;
+	transform: translateY(4px);
+}
+
+.left{
+	text-align: left;
+	display: inline-block;
+}
+
+#mainList li{
+	vertical-align: top;
+	display: inline-block;
+	height: 64px;
+	width: 64px;
+	margin: 0;
+	margin: 2px;
+	text-align: center;
+	font-size: 56px;
+	border-radius: 12px;
+	transition: 650ms;
+}
+
+
+*{
+	padding: 0;
+	font-family: consolas,Tahoma, Verdana, sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+@font-face {
+  font-family: consolas;
+  src: url(consolas.ttf);
+}

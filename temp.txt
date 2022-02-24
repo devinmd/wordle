@@ -1,0 +1,8 @@
+array
+  object
+    letter A
+    count 200
+  object
+    letter b
+    count 50
+
